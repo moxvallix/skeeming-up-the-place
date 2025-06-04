@@ -228,6 +228,10 @@ const REWARD_SCHEMES = [
   ["Goblin Legal Threat ", "Wit", "3", "My cousin is a lawyer!", "Reward", null, "0", "0", "0", "0", "0"],
 ];
 
+const EVENTS = [
+  ["Disappearing Handkerchief Trick", "Enemy", "Test Event", "Wit, Deception, Sneak, Manoeuvre, Might", "3", "\"Darn...\" gain 1 supply and 1 scrap", "He shoots you, but its fine other than the headache and you dropping all your scrap, Discard all your scrap."]
+]
+
 const SCHEMES = [...CRAFTED_SCHEMES, ...SPECIAL_SCHEMES, ...REWARD_SCHEMES];
 
-export { SCHEMES, CRAFTED_SCHEMES, SPECIAL_SCHEMES, REWARD_SCHEMES };
+export { SCHEMES, CRAFTED_SCHEMES, SPECIAL_SCHEMES, REWARD_SCHEMES, EVENTS };
