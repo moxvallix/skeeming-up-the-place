@@ -162,7 +162,7 @@ class EventCard extends LitElement {
           </div>
           <div id="info" class="p-4">
             <div id="type">
-              ${this.type}
+              <strong>${this.type}</strong>
               <p class="score">Level ${this.score || "0"}</p>
             </div>
             <div id="keywords">
@@ -180,7 +180,7 @@ class EventCard extends LitElement {
 
   _renderRules() {
     const failure = html`
-      <div class="p-2">
+      <div class="p-4">
         <strong>Failure:</strong>
         ${this.failure}
       </div>
@@ -188,7 +188,7 @@ class EventCard extends LitElement {
 
     return html`
       <div id="rules-enemy">
-        <div class="success p-2">
+        <div class="success p-4">
           <strong>Success:</strong>
           ${this.success}
         </div>

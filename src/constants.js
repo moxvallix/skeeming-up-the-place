@@ -232,6 +232,8 @@ const EVENTS = [
   ["Disappearing Handkerchief Trick", "Enemy", "Test Event", "Wit, Deception, Sneak, Manoeuvre, Might", "3", "\"Darn...\" gain 1 supply and 1 scrap", "He shoots you, but its fine other than the headache and you dropping all your scrap, Discard all your scrap."]
 ]
 
+const LANDMARKS = [["A cool-ass looking tree", "Landmark", "Damn thats a cool-ass looking tree", "Gain 2 sticks each time you land on the tile with this card"]]
+
 const SCHEMES = [...CRAFTED_SCHEMES, ...SPECIAL_SCHEMES, ...REWARD_SCHEMES];
 
-export { SCHEMES, CRAFTED_SCHEMES, SPECIAL_SCHEMES, REWARD_SCHEMES, EVENTS };
+export { SCHEMES, CRAFTED_SCHEMES, SPECIAL_SCHEMES, REWARD_SCHEMES, EVENTS, LANDMARKS };
