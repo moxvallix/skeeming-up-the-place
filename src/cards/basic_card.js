@@ -54,6 +54,10 @@ class BasicCard extends LitElement {
       border-top: 1px solid black;
     }
 
+    #details .type {
+      font-size: small;
+    }
+
     #description {
       font-style: italic;
       font-size: small;
@@ -78,7 +82,7 @@ class BasicCard extends LitElement {
             <h2>${this.name}</h2>
           </div>
           <div id="details" class="p-4">
-            <strong>${this.type}</strong>
+            <strong class="type">${this.type}</strong>
             ${this._renderRules()}
           </div>
         </div>

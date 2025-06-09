@@ -1,7 +1,7 @@
 const EVENTS = [
   [
     "Big Bird",
-    "Enemy",
+    "Encounter",
     "A large bird is circling above, it spots you, a tiny green thing, and believes you to be food",
     "Might, Manoeuvre, Deception",
     "2",
@@ -19,7 +19,7 @@ const EVENTS = [
   ],
   [
     "Sea Cucumber But It's On Land And Its Vicious",
-    "Enemy",
+    "Encounter",
     "Read the title",
     "Might, Deception, Sneak",
     "1",
@@ -28,7 +28,7 @@ const EVENTS = [
   ],
   [
     "Quail Jockey",
-    "Enemy",
+    "Encounter",
     "QUAIL JOCKEY! *throws popcorn*",
     "Might, Wit, Deception",
     "2",
@@ -37,7 +37,7 @@ const EVENTS = [
   ],
   [
     "A Horny Ghost",
-    "Enemy",
+    "Encounter",
     "OOOOOooooohhhhh yeaaaahhhhhhh.",
     "Wit, Sneak",
     "4",
@@ -46,7 +46,7 @@ const EVENTS = [
   ],
   [
     "A Gaggle Of Hired Goons",
-    "Enemy",
+    "Encounter",
     "Uhh boss, do I take this guy out?",
     "Wit, Deception, Sneak",
     "7",
@@ -64,7 +64,7 @@ const EVENTS = [
   ],
   [
     "Crazed Man With A Butter Knife",
-    "Enemy",
+    "Encounter",
     "Look, its still a knife, maybe dont kill him, you might feel bad",
     "Deception, Manoeuvre",
     "2",
@@ -73,7 +73,7 @@ const EVENTS = [
   ],
   [
     "The Town Drunkard",
-    "Enemy",
+    "Encounter",
     "*hic* whha? OI! WHADDYA SAY about *hic* my MOTHA?",
     "Wit, Deception, Sneak, Manoeuvre, Might",
     "3",
@@ -82,7 +82,7 @@ const EVENTS = [
   ],
   [
     "A Witch Who Recently Stubbed Her Big Toe",
-    "Enemy",
+    "Encounter",
     '*deep breath* "F**k" *deep breath* "S**t"',
     "Maneouvre, Sneak",
     "3",
@@ -91,7 +91,7 @@ const EVENTS = [
   ],
   [
     "Azathoth But Horny",
-    "Enemy",
+    "Encounter",
     "the trumpet players are giving him a wet dream",
     "Wit, Deception, Sneak, Manoeuvre, Might",
     "999",
@@ -100,7 +100,7 @@ const EVENTS = [
   ],
   [
     "Kevin The Wimpy Orc",
-    "Enemy",
+    "Encounter",
     "Do you play Gubshin Fimpact? ",
     "Wit, Deception, Might",
     "4",
@@ -109,7 +109,7 @@ const EVENTS = [
   ],
   [
     "Goblin Tax Collector",
-    "Enemy",
+    "Encounter",
     "\"Where's your permit, citizen?\" (he's wearing a saucepan on his head)",
     "Deception, Wit",
     "2",
@@ -118,7 +118,7 @@ const EVENTS = [
   ],
   [
     "Vengeful Bread",
-    "Enemy",
+    "Encounter",
     "A loaf of bread that's just TOO hard. Its yearns for revenge",
     "Might, Wit",
     "2",
@@ -127,7 +127,7 @@ const EVENTS = [
   ],
   [
     "The Worlds Saddest Jester",
-    "Enemy",
+    "Encounter",
     "Hes juggling rocks... Badly. Do you mock him, or help him?",
     "Wit, Deception, Might",
     "4",
@@ -136,7 +136,7 @@ const EVENTS = [
   ],
   [
     "A Cowboy",
-    "Enemy",
+    "Encounter",
     "Hand readied above his revolver... is that on theme?",
     "Might, Manoeuvre",
     "3",
@@ -145,7 +145,7 @@ const EVENTS = [
   ],
   [
     "Guy Dressed As A Dragon",
-    "Enemy",
+    "Encounter",
     "Is it scary? or is it hot?  or both. Either way, he might kill you",
     "Might, Wit, Manoeuvre",
     "3",
@@ -154,7 +154,7 @@ const EVENTS = [
   ],
   [
     "Lady Dressed As A Dragon",
-    "Enemy",
+    "Encounter",
     "Is it Hot? or is it scary? or both. Either way, she might kill you",
     "Might, Wit, Manoeuvre",
     "3",
@@ -163,7 +163,7 @@ const EVENTS = [
   ],
   [
     "Actual Real Dragon",
-    "Enemy",
+    "Encounter",
     "For real, its an actual god damned dragon",
     "Might",
     "1",

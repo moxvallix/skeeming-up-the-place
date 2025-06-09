@@ -61,7 +61,7 @@ class EventCard extends LitElement {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      border-bottom: 1px solid black;
+      /* border-bottom: 1px solid black; */
     }
 
     #rules-enemy div {
@@ -129,6 +129,10 @@ class EventCard extends LitElement {
       justify-content: flex-end;
     }
 
+    #type .name {
+      font-size: small;
+    }
+
     #icons {
       display: flex;
       gap: 0.25rem;
@@ -162,7 +166,7 @@ class EventCard extends LitElement {
           </div>
           <div id="info" class="p-4">
             <div id="type">
-              <strong>${this.type}</strong>
+              <strong class="name">${this.type}</strong>
               <p class="score">Level ${this.score || "0"}</p>
             </div>
             <div id="keywords">
