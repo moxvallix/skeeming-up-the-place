@@ -79,6 +79,13 @@ class Card extends LitElement {
       gap: 0.75rem;
     }
 
+    #keywords .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
     #keywords .icon {
       aspect-ratio: 1;
       width: 48px;
@@ -94,6 +101,12 @@ class Card extends LitElement {
     #keywords .score {
       font-size: xxx-large;
       font-weight: bold;
+    }
+
+    #keywords .name {
+      position: absolute;
+      font-size: small;
+      bottom: -18px;
     }
 
     .separator {
@@ -121,6 +134,10 @@ class Card extends LitElement {
   }
 
   render() {
+    const keywordLabel = html`
+      <span class="name">${this.keywords}</span>
+    `
+
     return html`
       <div id="main">
         <div id="data">
@@ -134,8 +151,11 @@ class Card extends LitElement {
             <div id="keywords">
               <div class="container">
                 <p class="score">+${this.score || "0"}</p>
-                <div class="icon">
-                  ${this._renderKeywordIcon()}
+                <div class="icon-container">
+                  <div class="icon">
+                    ${this._renderKeywordIcon()}
+                  </div>
+                  ${this.keywords ? keywordLabel : undefined}
                 </div>
               </div>
             </div>
