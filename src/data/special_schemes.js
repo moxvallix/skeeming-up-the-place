@@ -5,12 +5,12 @@ const SPECIAL_SCHEMES = [
     null,
     "Run away little goblin child.",
     "Free",
-    "Avoid an encounters fail condition, miss out on success condition.",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
+    "Avoid an encounters fail condition, miss out on it's success condition.",
+    0,
+    0,
+    0,
+    0,
+    0,
   ],
 ];
 

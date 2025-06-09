@@ -5,6 +5,7 @@ class Card extends LitElement {
     name: {type: String},
     keywords: {type: String},
     score: {type: String},
+    acquisition: {type: String},
     description: {type: String},
     recipe: {type: String},
     rules: {type: String},
@@ -56,8 +57,6 @@ class Card extends LitElement {
     }
 
     #info {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
       border-top: 1px black solid;
       border-bottom: 1px black solid;
     }
@@ -69,15 +68,20 @@ class Card extends LitElement {
 
     #keywords {
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: space-evenly;
-      flex-direction: column;
       gap: 0.25rem;
+    }
+
+    #keywords .container {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
 
     #keywords .icon {
       aspect-ratio: 1;
-      width: 100%;
+      width: 48px;
       border: 1px black solid;
       border-radius: 9999px;
       display: flex;
@@ -88,12 +92,16 @@ class Card extends LitElement {
     }
 
     #keywords .score {
-      font-size: xx-large;
+      font-size: xxx-large;
       font-weight: bold;
     }
 
     .separator {
       border: 1px black solid;
+    }
+
+    #info .type {
+      font-size: small;
     }
   `;
 
@@ -119,15 +127,17 @@ class Card extends LitElement {
           <div class="p-4">
             <h2>${this.name}</h2>
           </div>
-          <div id="info">
-            <div id="image" class="p-4">
-              Image goes here
+          <div id="info" class="p-4">
+            <div>
+              <strong class="type">${this.acquisition} Scheme</strong>
             </div>
-            <div id="keywords" class="p-2">
-              <div class="icon">
-                ${this._renderKeywordIcon()}
+            <div id="keywords">
+              <div class="container">
+                <p class="score">+${this.score || "0"}</p>
+                <div class="icon">
+                  ${this._renderKeywordIcon()}
+                </div>
               </div>
-              <p class="score">${this.score || "0"}</p>
             </div>
           </div>
           ${this._renderRules()}
@@ -140,10 +150,8 @@ class Card extends LitElement {
   }
 
   _renderRules() {
-    if (this.materials.every(m => { return m === "0" })) { return; };
-
     if (!this.rules) {
-      return html`<p id="rules" class="p-2" style="color: #636363">Crafted Item</p>`;
+      return;
     }
 
     return html`<p id="rules" class="p-2">${this.rules}</p>`;
@@ -158,6 +166,8 @@ class Card extends LitElement {
       case "Sneak": return "🥷";
       case "Manoeuvre": return "⛹️‍♂️";
     }
+
+    return "❓";
   }
 
   _renderRecipe() {
