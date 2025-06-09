@@ -1,12 +1,12 @@
 const TILES = [
-  [4, "Dark Forest", "Landscape", "3 Stick"],
-  [4, "Misty Plains", "Landscape", "1 Stick, 1 Stone"],
-  [3, "Dense Jungle", "Landscape", "2 Stick, 1 String"],
-  [5, "Rocky Mountain", "Landscape", "2 Stone"],
-  [2, "Wastelands", "Landscape", "1 Scrap, 1 Stick"],
-  [4, "Bouldersome Hills", "Landscape", "1 Stone"],
-  [3, "The String Mines", "Landscape", "3 String"],
-  [3, "Ancient Battlefield", "Landscape", "2 Scrap"],
+  [4, "Dark Forest", "Landscape", "Stick Stick Stick"],
+  [4, "Misty Plains", "Landscape", "Stick Stone"],
+  [3, "Dense Jungle", "Landscape", "Stick Stick String"],
+  [5, "Rocky Mountain", "Landscape", "Stone Stone"],
+  [2, "Wastelands", "Landscape", "Scrap Stick"],
+  [4, "Bouldersome Hills", "Landscape", "Stone"],
+  [3, "The String Mines", "Landscape", "String String String"],
+  [3, "Ancient Battlefield", "Landscape", "Scrap"],
 ];
 
 export default TILES;
