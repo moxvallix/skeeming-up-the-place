@@ -27,13 +27,13 @@ EVENTS.forEach(data => {
   app.appendChild(card);
 });
 
-const crafted = [...CRAFTED_SCHEMES, ...CRAFTED_SCHEMES];
+const crafted = [...CRAFTED_SCHEMES, ...CRAFTED_SCHEMES, ...CRAFTED_SCHEMES];
 crafted.forEach(data => {
   const card = new Card(data);
   app.appendChild(card);
 });
 
-const rewards = [...REWARD_SCHEMES, ...REWARD_SCHEMES, ...REWARD_SCHEMES];
+const rewards = [...REWARD_SCHEMES, ...REWARD_SCHEMES];
 rewards.forEach(data => {
   const card = new Card(data);
   app.appendChild(card);

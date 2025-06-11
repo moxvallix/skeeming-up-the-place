@@ -84,7 +84,7 @@ const EVENTS = [
     "A Witch Who Recently Stubbed Her Big Toe",
     "Encounter",
     '*deep breath* "F**k" *deep breath* "S**t"',
-    "Maneouvre, Sneak",
+    "Manoeuvre, Sneak",
     "3",
     "1 Random Scheme",
     "She tries to cast a spell on you, but she misses due to the pain. You flee, but drop a scheme. Discard a scheme card at random.",

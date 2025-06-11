@@ -83,6 +83,8 @@ class Tile extends LitElement {
       align-items: center;
       justify-content: center;
       font-size: large;
+      margin-left: 0.125rem;
+      margin-right: 0.125rem;
     }
   `;
 
